@@ -27,7 +27,8 @@ def test_model(trained_model, X_df, skf_is):
     
 from sklearn.cross_validation import ShuffleSplit
 
-data = pd.read_csv("D:/Data/DSSP/Data Camp 3/14_15DataCamp/data_amadeus_newAll.csv")
+#data = pd.read_csv("D:/Data/DSSP/Data Camp 3/14_15DataCamp/data_amadeus_newAll.csv")
+data = pd.read_csv("data_amadeus.csv")
 X_df = data.drop(['PAX', 'log_PAX'], axis=1)
 y_array = data['log_PAX'].values
 
